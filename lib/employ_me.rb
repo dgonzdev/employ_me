@@ -1,2 +1,1 @@
-module EmployMe
-end
+require 'employ_me/parser/title/strategies/pattern_match.rb'
