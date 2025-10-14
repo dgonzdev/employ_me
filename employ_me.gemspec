@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "employ_me"
-  s.version     = "0.0.2"
+  s.version     = "0.0.3"
   s.summary     = "Parse information from job listings"
   s.description = "Parse information from job listings"
   s.authors     = ["dgonzdev"]
@@ -11,4 +11,6 @@ Gem::Specification.new do |s|
     "https://rubygems.org/gems/employ_me"
   # TODO: Add license
   # s.license       = ""
+
+  s.add_runtime_dependency "nokogiri", ">= 1.6"
 end
