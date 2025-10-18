@@ -1,16 +1,12 @@
 Gem::Specification.new do |s|
   s.name        = "employ_me"
-  s.version     = "0.0.4"
+  s.version     = "0.0.5"
   s.summary     = "Parse information from job listings"
   s.description = "Parse information from job listings"
   s.authors     = ["dgonzdev"]
   # TODO: Add email
   # s.email       = ""
-  s.files       = [
-    "lib/employ_me.rb",
-    "lib/employ_me/parser/programming_language/strategies/pattern_match.rb",
-    "lib/employ_me/parser/title/strategies/pattern_match.rb"
-  ]
+  s.files       = Dir["{lib}/**/*"]
   s.homepage    =
     "https://rubygems.org/gems/employ_me"
   # TODO: Add license
