@@ -4,7 +4,7 @@ Parse job listings.
 
 ## Installation
 
-Install it manually
+Install it manually:
 
 ```bash
 gem install employ_me
