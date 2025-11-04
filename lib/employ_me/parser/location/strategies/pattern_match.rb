@@ -15,6 +15,9 @@ module EmployMe
                 curr_node_text = curr_node.text
 
                 # Remote Jobs
+                regex = Regexp.new('Remote', Regexp::IGNORECASE)
+                return ['REMOTE', nil, nil] if regex.match(curr_node_text)
+
                 regex = Regexp.new('US & Canada Remote', Regexp::IGNORECASE)
                 return ['REMOTE', nil, nil] if regex.match(curr_node_text)
 
