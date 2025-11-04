@@ -4,7 +4,13 @@ Parse job listings.
 
 ## Installation
 
-Add the gem to your Gemfile:
+Install it manually
+
+```bash
+gem install employ_me
+```
+
+Or add it to your Gemfile:
 
 ```ruby
 gem "employ_me"
@@ -14,11 +20,20 @@ gem "employ_me"
 
 ### Location
 
+Find the location.
+
 ```ruby
 require 'nokogiri'
+require 'employ_me'
 
 listing = <<-HTML
-  123
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div>San Francisco, CA</div>
+  </body>
+</html>
 HTML
 
 document = Nokogiri::HTML(listing)
