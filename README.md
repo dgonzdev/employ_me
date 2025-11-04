@@ -63,3 +63,26 @@ document = Nokogiri::HTML(listing)
 
 language = EmployMe::Parser::ProgrammingLanguage::Strategies::PatternMatch.perform(document)
 ```
+
+### Salary
+
+Find the salary.
+
+```ruby
+require 'nokogiri'
+require 'employ_me'
+
+listing = <<-HTML
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div>$160,000 - $180,000</div>
+  </body>
+</html>
+HTML
+
+document = Nokogiri::HTML(listing)
+
+salary_floor, salary_ceiling = EmployMe::Parser::Salary::Strategies::PatternMatch.perform(document)
+```
