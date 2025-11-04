@@ -19,7 +19,7 @@ module EmployMe
                 return 'c_sharp' if regex.match(curr_node_text)
 
                 # Go
-                regex = Regexp.new('Go', Regexp::IGNORECASE)
+                regex = Regexp.new('Go')
                 return 'go' if regex.match(curr_node_text)
 
                 # Java
@@ -47,6 +47,13 @@ module EmployMe
                 # Ruby
                 regex = Regexp.new('Ruby', Regexp::IGNORECASE)
                 return 'ruby' if regex.match(curr_node_text)
+
+                regex = Regexp.new('Ruby on Rails', Regexp::IGNORECASE)
+                return 'ruby' if regex.match(curr_node_text)
+
+                # Swift
+                regex = Regexp.new('Swift', Regexp::IGNORECASE)
+                return 'swift' if regex.match(curr_node_text)
               end
 
               tree.concat(curr_node.children)
