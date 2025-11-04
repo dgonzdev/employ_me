@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "employ_me"
-  s.version     = "0.0.7"
+  s.version     = "0.0.8"
   s.summary     = "Parse information from job listings"
   s.description = "Parse information from job listings"
   s.authors     = ["dgonzdev"]
@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   # s.email       = ""
   s.files       = Dir["{lib}/**/*"]
   s.homepage    =
-    "https://rubygems.org/gems/employ_me"
+    "https://github.com/dgonzdev/employ_me"
   # TODO: Add license
   # s.license       = ""
 
