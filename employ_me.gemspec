@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "employ_me"
-  s.version     = "0.0.8"
+  s.version     = "0.0.9"
   s.summary     = "Parse information from job listings"
   s.description = "Parse information from job listings"
   s.authors     = ["dgonzdev"]
