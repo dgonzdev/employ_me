@@ -36,6 +36,17 @@ module EmployMe
                   return [low, high]
                 end
 
+                # Salary Format: $100,000.00 - $200,000.00
+                regex = Regexp.new('\\$([0-9]+),[0-9]+\.00 to \\$([0-9]+),[0-9]+\.00', Regexp::IGNORECASE)
+                result = regex.match(curr_node_text)
+
+                if result
+                  low = result[1].to_i * 1000
+                  high = result[2].to_i * 1000
+
+                  return [low, high]
+                end
+
                 # Salary Format: $100,000 to $200,000
                 regex = Regexp.new('\\$([0-9]+),[0-9]+ to \\$([0-9]+),[0-9]+', Regexp::IGNORECASE)
                 result = regex.match(curr_node_text)
