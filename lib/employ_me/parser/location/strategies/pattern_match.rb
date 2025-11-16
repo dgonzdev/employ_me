@@ -25,6 +25,9 @@ module EmployMe
                 regex = Regexp.new('San Francisco, CA', Regexp::IGNORECASE)
                 return ['CA', 'San Francisco', 'CA'] if regex.match(curr_node_text)
 
+                regex = Regexp.new('San Francisco', Regexp::IGNORECASE)
+                return ['CA', 'San Francisco', 'CA'] if regex.match(curr_node_text)
+
                 # San Mateo, CA Jobs
                 regex = Regexp.new('San Mateo, CA', Regexp::IGNORECASE)
                 return ['CA', 'San Mateo', 'CA'] if regex.match(curr_node_text)
