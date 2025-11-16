@@ -87,6 +87,31 @@ document = Nokogiri::HTML(listing)
 salary_floor, salary_ceiling = EmployMe::Parser::Salary::Strategies::PatternMatch.perform(document)
 ```
 
+### Technologies
+
+Find the technologies.
+
+```ruby
+require 'nokogiri'
+require 'employ_me'
+
+listing = <<-HTML
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div>Kafka</div>
+    <div>Kubernetes</div>
+    <div>Linux</div>
+  </body>
+</html>
+HTML
+
+document = Nokogiri::HTML(listing)
+
+technologies = EmployMe::Parser::Technologies::Strategies::PatternMatch.perform(document)
+```
+
 ### Title
 
 Find the title.
