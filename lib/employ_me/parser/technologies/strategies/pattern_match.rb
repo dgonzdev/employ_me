@@ -10,7 +10,6 @@ module EmployMe
             tree = [root_node]
 
             # Depth First Search
-
             while tree.size > 0
               curr_node = tree.shift
 
